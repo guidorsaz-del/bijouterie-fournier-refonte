@@ -3,230 +3,334 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horlogerie-Bijouterie Fournier — Martigny, Valais depuis 1978</title>
+<title>Horlogerie-Bijouterie Fournier — Martigny depuis 1978</title>
+<meta name="description" content="Horlogerie-Bijouterie Thierry Fournier à Martigny depuis 1978 : vente et réparation de montres, pendules et bijoux, gravures et créations en or, argent, titane et acier.">
+<meta property="og:title" content="Horlogerie-Bijouterie Fournier — Martigny depuis 1978">
+<meta property="og:description" content="Montres, bijoux, réparations, gravures et créations sur mesure. Place Centrale 4, Martigny.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--color-primary:#b8942c;--color-navy:#0a1628;--color-mid:#162038;--color-bg:#faf8f5;--color-cream:#f0ebe3;--color-text:#1a1612;--color-muted:#6b6050;--color-border:#e0d8cc;--color-light:#fff;}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{font-family:'Inter',sans-serif;background:var(--color-bg);color:var(--color-text);font-weight:300;line-height:1.75;}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,0.97);backdrop-filter:blur(8px);padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;}
-.nav-brand{font-family:'EB Garamond',serif;font-size:1.15rem;color:#fff;text-decoration:none;letter-spacing:.06em;}
-.nav-brand span{color:var(--color-primary);}
-.nav-links{display:flex;gap:2rem;list-style:none;}
-.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;transition:color .3s;}
-.nav-links a:hover{color:var(--color-primary);}
-.nav-cta{border:1px solid var(--color-primary);color:var(--color-primary);padding:.5rem 1.3rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:all .3s;}
-.nav-cta:hover{background:var(--color-primary);color:#fff;}
-/* IMAGE: hero-background */
-#hero{min-height:100vh;display:flex;align-items:center;padding:8rem 2rem 5rem;background:linear-gradient(rgba(10,22,40,0.7),rgba(5,10,20,0.82)),url('https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=1600&auto=format&fit=crop&q=85') center/cover no-repeat;position:relative;}
-#hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(transparent,var(--color-bg));}
-.hero-inner{position:relative;z-index:1;max-width:1060px;margin:0 auto;width:100%;}
-.hero-tag{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--color-primary);display:block;margin-bottom:1.2rem;}
-.hero-title{font-family:'EB Garamond',serif;font-size:clamp(2.8rem,7vw,5.5rem);color:#fff;font-weight:400;line-height:1.05;margin-bottom:1rem;}
-.hero-title em{font-style:italic;color:var(--color-primary);}
-.hero-sub{font-size:.88rem;color:rgba(255,255,255,.65);margin-bottom:2.5rem;max-width:450px;line-height:1.9;}
-.btn-gold{display:inline-block;background:var(--color-primary);color:#fff;padding:.85rem 2.5rem;font-size:.73rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:background .3s;margin-right:.8rem;}
-.btn-gold:hover{background:#9a7a24;}
-.btn-outline{display:inline-block;border:1px solid rgba(255,255,255,.4);color:#fff;padding:.83rem 2.5rem;font-size:.73rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:all .3s;}
-.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.06);}
-section{padding:5rem 2rem;}
-.container{max-width:1060px;margin:0 auto;}
-.section-label{font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.7rem;}
-.section-title{font-family:'EB Garamond',serif;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:400;line-height:1.1;margin-bottom:1rem;}
-.section-title em{font-style:italic;color:var(--color-navy);}
-.divider{width:44px;height:1px;background:var(--color-primary);margin:1.2rem 0;}
-/* MARQUES */
-#marques{background:var(--color-navy);padding:2.5rem 2rem;}
-.marques-inner{max-width:1060px;margin:0 auto;text-align:center;}
-.marques-inner p{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.5rem;}
-.brands-row{display:flex;gap:2.5rem;justify-content:center;flex-wrap:wrap;}
-.brand-name{font-family:'EB Garamond',serif;font-size:1.1rem;color:rgba(255,255,255,.55);letter-spacing:.12em;transition:color .3s;}
-.brand-name:hover{color:var(--color-primary);}
-/* UNIVERS */
-#univers{background:var(--color-light);}
-.univers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;}
-.ucard{padding:2.5rem 2rem;border:1px solid var(--color-border);transition:border-color .3s,transform .3s;}
-.ucard:hover{border-color:var(--color-primary);transform:translateY(-3px);}
-.ucard-icon{font-size:2rem;margin-bottom:1.2rem;}
-.ucard h3{font-family:'EB Garamond',serif;font-size:1.4rem;margin-bottom:.7rem;}
-.ucard p{font-size:.82rem;color:var(--color-muted);line-height:1.9;}
-/* BIJOUX */
-#bijoux{background:var(--color-bg);}
-.bijoux-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
-/* IMAGE: jewelry-photo */
-.bijoux-img{height:500px;background:url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=900&auto=format&fit=crop&q=85') center/cover no-repeat;}
-.bijoux-text p{font-size:.86rem;color:var(--color-muted);line-height:2;margin-bottom:1rem;}
-/* MONTRES */
-#montres{background:var(--color-cream);}
-.montres-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
-/* IMAGE: watch-photo */
-.montres-img{height:460px;background:url('https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=900&auto=format&fit=crop&q=85') center/cover no-repeat;}
-.montres-text p{font-size:.86rem;color:var(--color-muted);line-height:2;margin-bottom:1rem;}
-/* HORAIRES */
-#horaires{background:var(--color-navy);color:#fff;}
-.horaires-inner{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3rem;margin-top:3rem;}
-.h-block h3{font-family:'EB Garamond',serif;font-size:1.2rem;color:var(--color-primary);margin-bottom:1rem;}
-.h-table{width:100%;border-collapse:collapse;}
-.h-table tr{border-bottom:1px solid rgba(255,255,255,.08);}
-.h-table td{padding:.6rem 0;font-size:.82rem;color:rgba(255,255,255,.65);}
-.h-table td:last-child{text-align:right;}
-.contact-block h3{font-family:'EB Garamond',serif;font-size:1.2rem;color:var(--color-primary);margin-bottom:1rem;}
-.contact-block p{font-size:.83rem;color:rgba(255,255,255,.65);line-height:2.2;}
-.contact-block a{color:rgba(255,255,255,.65);text-decoration:none;transition:color .3s;}
-.contact-block a:hover{color:var(--color-primary);}
-.since-block{border:1px solid rgba(184,148,44,.3);padding:2rem;text-align:center;}
-.since-num{font-family:'EB Garamond',serif;font-size:4rem;color:var(--color-primary);line-height:1;}
-.since-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:.5rem;}
-footer{background:#06111f;color:rgba(255,255,255,.3);padding:2rem;text-align:center;font-size:.7rem;letter-spacing:.08em;}
-footer strong{color:var(--color-primary);}
-.fade-in{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease;}
-.fade-in.visible{opacity:1;transform:translateY(0);}
-@media(max-width:768px){
-  .nav-links,.nav-cta{display:none;}
-  .univers-grid{grid-template-columns:1fr;}
-  .bijoux-inner,.montres-inner{grid-template-columns:1fr;}
-  .bijoux-img,.montres-img{height:240px;}
-  .horaires-inner{grid-template-columns:1fr;}
-  .brands-row{gap:1.5rem;}
-}
+  :root{
+    --gold:#c8a96a;
+    --gold-deep:#a98a4c;
+    --ink:#0f0e0d;
+    --ink-2:#171513;
+    --card:#1c1916;
+    --ivory:#f6f2ea;
+    --muted:#9c9285;
+    --line:#2b2620;
+    --text:#f2ede4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;color:var(--text);background:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:'Italiana',serif;font-weight:400;line-height:1.12;letter-spacing:.01em}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500;display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:30px;height:1px;background:var(--gold)}
+  .btn{display:inline-block;background:var(--gold);color:#16130d;padding:15px 34px;border-radius:2px;font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;transition:.25s;border:none;cursor:pointer}
+  .btn:hover{background:var(--gold-deep);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;border:1px solid rgba(200,169,106,.5);color:var(--gold)}
+  .btn-ghost:hover{background:rgba(200,169,106,.12);transform:translateY(-2px)}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:.3s;padding:20px 0;background:linear-gradient(rgba(15,14,13,.6),transparent)}
+  nav.scrolled{background:rgba(15,14,13,.97);box-shadow:0 2px 22px rgba(0,0,0,.5);padding:11px 0}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between}
+  .logo{font-family:'Italiana';font-size:1.5rem;letter-spacing:.06em;color:#fff;display:flex;flex-direction:column;line-height:1}
+  .logo small{font-size:.52rem;letter-spacing:.36em;color:var(--gold);margin-top:5px;font-family:'Inter'}
+  .nav-links{display:flex;gap:34px;align-items:center}
+  .nav-links a{font-size:.84rem;font-weight:500;color:#fff;letter-spacing:.05em;transition:.2s}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-links a.navcta{border:1px solid var(--gold);color:var(--gold);padding:9px 20px;text-transform:uppercase;font-size:.74rem;letter-spacing:.1em}
+  .nav-links a.navcta:hover{background:var(--gold);color:#16130d}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+  .burger span{width:26px;height:2px;background:#fff;transition:.3s}
+
+  header.hero{min-height:100vh;display:flex;align-items:center;position:relative;
+    background:linear-gradient(90deg,rgba(15,14,13,.92) 0%,rgba(15,14,13,.55) 55%,rgba(15,14,13,.3) 100%),url('https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=1700&auto=format&fit=crop&q=82') center/cover no-repeat;}
+  .hero-content{max-width:650px;padding-top:70px}
+  .hero h1{font-size:clamp(2.8rem,6.5vw,5rem);margin:22px 0 22px;color:#fff}
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero p.lead{font-size:1.16rem;color:rgba(242,237,228,.84);max-width:520px;margin-bottom:34px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* MARQUEE */
+  .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink-2);overflow:hidden;padding:24px 0}
+  .marquee-track{display:flex;gap:60px;white-space:nowrap;width:max-content;animation:scroll 28s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  .marquee-track span{font-family:'Italiana';font-size:1.5rem;color:var(--muted);letter-spacing:.08em;transition:.2s}
+  .marquee-track span:hover{color:var(--gold)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  section{padding:108px 0}
+  .sec-head{max-width:640px;margin-bottom:54px}
+  .sec-head.center{margin:0 auto 54px;text-align:center}
+  .sec-head h2{font-size:clamp(2.2rem,4vw,3.3rem);margin:16px 0 14px;color:#fff}
+  .sec-head p{color:var(--muted);font-size:1.04rem}
+
+  /* COLLECTIONS EXPLORER (signature) */
+  .explorer{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center}
+  .exp-visual{position:relative;height:520px;border-radius:6px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+  .exp-visual .frame{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .6s ease;transform:scale(1.04)}
+  .exp-visual .frame.active{opacity:1;transform:scale(1)}
+  .exp-list .exp-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer;transition:.3s}
+  .exp-list .exp-item:first-child{border-top:1px solid var(--line)}
+  .exp-item .eh{display:flex;align-items:center;gap:16px}
+  .exp-item .en{font-family:'Italiana';color:var(--gold);font-size:1rem;opacity:.6}
+  .exp-item h3{font-size:1.6rem;color:rgba(242,237,228,.55);transition:.3s}
+  .exp-item.active h3{color:#fff}
+  .exp-item p{color:var(--muted);font-size:.95rem;max-height:0;overflow:hidden;opacity:0;transition:.4s;margin-top:0}
+  .exp-item.active p{max-height:120px;opacity:1;margin-top:12px}
+
+  /* SERVICES */
+  .serv{background:var(--ink-2)}
+  .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .scard{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:34px 28px;transition:.3s;text-align:center}
+  .scard:hover{transform:translateY(-6px);border-color:var(--gold)}
+  .scard .ic{width:56px;height:56px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;margin:0 auto 18px}
+  .scard .ic svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.5}
+  .scard h3{font-size:1.4rem;margin-bottom:10px;color:#fff}
+  .scard p{color:var(--muted);font-size:.93rem}
+
+  /* GALERIE */
+  .gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px}
+  .gal figure{overflow:hidden;border-radius:4px;background-size:cover;background-position:center;transition:.6s}
+  .gal figure:hover{transform:scale(1.04)}
+  .gw{grid-column:span 2}.gt{grid-row:span 2}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .about-img{height:440px;border-radius:6px;background:url('https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=1000&auto=format&fit=crop&q=82') center/cover;box-shadow:0 24px 56px rgba(0,0,0,.6)}
+  .about h2{font-size:clamp(2rem,3.6vw,2.8rem);margin:16px 0 18px;color:#fff}
+  .about p{color:var(--muted);margin-bottom:16px}
+  .about .stats{display:flex;gap:40px;margin-top:24px}
+  .about .stats .n{font-family:'Italiana';font-size:2.4rem;color:var(--gold)}
+  .about .stats .l{font-size:.85rem;color:var(--muted)}
+
+  /* CONTACT */
+  .contact{background:var(--ink-2)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px}
+  .cinfo .crow{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .cinfo .crow .ic{width:42px;height:42px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;flex:none;color:var(--gold)}
+  .cinfo .crow .k{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .cinfo a{color:#fff}
+  .hours{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:34px}
+  .hours h3{font-size:1.4rem;color:#fff;margin-bottom:18px}
+  .hours .hrow{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+  .hours .hrow span:last-child{color:var(--gold)}
+
+  footer{background:#0a0908;color:var(--muted);padding:48px 0 28px}
+  .foot-top{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid var(--line)}
+  .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:.84rem}
+  .foot-bottom a{color:var(--gold)}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:900px){
+    .nav-links{position:fixed;inset:0 0 0 auto;width:76%;max-width:320px;background:var(--ink-2);flex-direction:column;justify-content:center;padding:40px;transform:translateX(100%);transition:.35s}
+    .nav-links.open{transform:none}
+    .burger{display:flex}
+    .explorer,.serv-grid,.about-grid,.contact-grid,.gal{grid-template-columns:1fr}
+    .exp-visual{height:320px}
+    .gal{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gw{grid-column:auto}.gt{grid-row:auto}
+  }
+  @media(max-width:560px){.serv-grid,.gal{grid-template-columns:1fr}section{padding:74px 0}}
 </style>
 </head>
 <body>
-<nav>
-  <a href="#" class="nav-brand"><span>Fournier</span> Horlogerie-Bijouterie</a>
-  <ul class="nav-links">
-    <li><a href="#univers">Nos Services</a></li>
-    <li><a href="#bijoux">Bijoux</a></li>
-    <li><a href="#montres">Montres</a></li>
-    <li><a href="#horaires">Horaires</a></li>
-    <li><a href="#horaires">Contact</a></li>
-  </ul>
-  <a href="tel:+41277222293" class="nav-cta">Nous appeler</a>
+
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="logo">Fournier<small>Horlogerie · Bijouterie</small></a>
+    <div class="nav-links" id="navlinks">
+      <a href="#collections">Collections</a>
+      <a href="#services">Services</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+41277222293" class="navcta">Nous contacter</a>
+    </div>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
 </nav>
 
-<!-- IMAGE: hero-background -->
-<section id="hero">
-  <div class="hero-inner">
-    <span class="hero-tag">Horlogerie · Bijouterie · Martigny · Depuis 1978</span>
-    <h1 class="hero-title">L'art de l'<em>horlogerie</em><br>et de la bijouterie<br>depuis 1978</h1>
-    <p class="hero-sub">Thierry Fournier et son équipe vous accueillent Place centrale à Martigny pour vous conseiller dans le choix de votre montre, bijou ou cadeau.</p>
-    <a href="#univers" class="btn-gold">Nos services</a>
-    <a href="#montres" class="btn-outline">Nos marques</a>
-  </div>
-</section>
-
-<div id="marques">
-  <div class="marques-inner">
-    <p>Marques disponibles en boutique</p>
-    <div class="brands-row">
-      <span class="brand-name">Tissot</span>
-      <span class="brand-name">Mido</span>
-      <span class="brand-name">Swatch</span>
-      <span class="brand-name">Calvin Klein</span>
-      <span class="brand-name">Casio</span>
-      <span class="brand-name">Boccia</span>
-      <span class="brand-name">Cœur de Lion</span>
-      <span class="brand-name">Lotus</span>
-      <span class="brand-name">Lorus</span>
+<header class="hero">
+  <div class="wrap hero-content">
+    <span class="eyebrow">Martigny · depuis 1978</span>
+    <h1>L'art du temps<br>et de la <em>parure</em>.</h1>
+    <p class="lead">Horlogerie-Bijouterie Thierry Fournier : la vente, la réparation et la création de montres et de bijoux, transmises de génération en génération.</p>
+    <div class="hero-cta">
+      <a href="#collections" class="btn">Nos collections</a>
+      <a href="#contact" class="btn btn-ghost">Nous rendre visite</a>
     </div>
+  </div>
+</header>
+
+<!-- MARQUEE marques -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Tissot</span><span>Mido</span><span>Swatch</span><span>Flik Flak</span><span>Calvin Klein</span><span>Boccia</span><span>Cœur de Lion</span><span>Casio</span><span>Lotus</span><span>Lorus</span><span>Hermle</span>
+    <span>Tissot</span><span>Mido</span><span>Swatch</span><span>Flik Flak</span><span>Calvin Klein</span><span>Boccia</span><span>Cœur de Lion</span><span>Casio</span><span>Lotus</span><span>Lorus</span><span>Hermle</span>
   </div>
 </div>
 
-<section id="univers">
-  <div class="container">
-    <p class="section-label fade-in">Ce que nous faisons</p>
-    <h2 class="section-title fade-in">Vente, <em>réparation</em> & gravure</h2>
-    <div class="divider fade-in"></div>
-    <div class="univers-grid">
-      <div class="ucard fade-in">
-        <div class="ucard-icon">⌚</div>
-        <h3>Vente de montres</h3>
-        <p>Large sélection de montres pour hommes, femmes et enfants. Des montres de sport aux modèles habillés, en passant par les montres à quartz et automatiques — toutes les envies et tous les budgets.</p>
+<!-- COLLECTIONS EXPLORER (signature) -->
+<section id="collections">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Nos univers</span>
+      <h2>Quatre savoir-faire sous un même toit</h2>
+      <p>De la montre du quotidien à la création unique, explorez nos univers. Cliquez pour découvrir.</p>
+    </div>
+    <div class="explorer reveal">
+      <div class="exp-visual">
+        <div class="frame active" data-i="0" style="background-image:url('https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=1100&auto=format&fit=crop&q=82')"></div>
+        <div class="frame" data-i="1" style="background-image:url('https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=1100&auto=format&fit=crop&q=82')"></div>
+        <div class="frame" data-i="2" style="background-image:url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1100&auto=format&fit=crop&q=82')"></div>
+        <div class="frame" data-i="3" style="background-image:url('https://images.unsplash.com/photo-1548171838-1fd4cb4ab854?w=1100&auto=format&fit=crop&q=82')"></div>
       </div>
-      <div class="ucard fade-in">
-        <div class="ucard-icon">💎</div>
-        <h3>Bijoux & cadeaux</h3>
-        <p>Bagues, colliers, bracelets et pendentifs en or, argent, titane et acier. Idéaux pour les anniversaires, fiançailles, mariages ou simplement se faire plaisir. Conseil personnalisé assuré.</p>
-      </div>
-      <div class="ucard fade-in">
-        <div class="ucard-icon">🔩</div>
-        <h3>Réparation & gravure</h3>
-        <p>Réparation de montres et bijoux de toutes marques, changement de pile, raccourcissement de bracelet. Gravure personnalisée sur montres, bracelets et objets pour un cadeau unique.</p>
+      <div class="exp-list">
+        <div class="exp-item active" data-i="0">
+          <div class="eh"><span class="en">01</span><h3>Montres & pendules</h3></div>
+          <p>Une sélection de grandes marques : Tissot, Mido, Swatch, Calvin Klein, Casio, Lotus, Lorus et bien d'autres, ainsi que des horloges et pendules.</p>
+        </div>
+        <div class="exp-item" data-i="1">
+          <div class="eh"><span class="en">02</span><h3>Bijoux en or & argent</h3></div>
+          <p>Bagues, colliers, bracelets et parures en or, argent, titane et acier, pour tous les styles et toutes les occasions.</p>
+        </div>
+        <div class="exp-item" data-i="2">
+          <div class="eh"><span class="en">03</span><h3>Création sur mesure</h3></div>
+          <p>Donnez vie à vos idées : nous créons des pièces uniques en or, argent, titane et acier, pensées rien que pour vous.</p>
+        </div>
+        <div class="exp-item" data-i="3">
+          <div class="eh"><span class="en">04</span><h3>Réparation & gravure</h3></div>
+          <p>Réparation de montres, pendules et bijoux, changement de piles et gravures personnalisées, avec le soin de l'artisan.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- IMAGE: jewelry-photo -->
-<section id="bijoux">
-  <div class="container">
-    <div class="bijoux-inner">
-      <div class="bijoux-img fade-in"></div>
-      <div class="fade-in">
-        <p class="section-label">Bijouterie</p>
-        <h2 class="section-title">Des bijoux pour <em>chaque occasion</em></h2>
-        <div class="divider"></div>
-        <p>Notre sélection de bijoux couvre toutes les occasions : des bijoux de créateurs contemporains aux pièces plus classiques, en passant par les bijoux fantaisie pour tous les jours.</p>
-        <p>Nous travaillons l'or jaune, l'or blanc, l'argent, le titane et l'acier. Les marques Cœur de Lion, Boccia, Lotus et bien d'autres sont disponibles en boutique.</p>
-        <p>Vous cherchez un cadeau mais vous ne savez pas quoi choisir ? Nos équipes vous guident avec plaisir vers la pièce parfaite pour la personne parfaite.</p>
+<!-- SERVICES -->
+<section class="serv" id="services">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">Nos services</span>
+      <h2>À votre service depuis 1978</h2>
+    </div>
+    <div class="serv-grid">
+      <article class="scard reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 2M9 2h6M12 2v2"/></svg></div>
+        <h3>Vente & conseil</h3>
+        <p>Montres, pendules et bijoux de grandes marques, avec un conseil personnalisé et de proximité.</p>
+      </article>
+      <article class="scard reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 7l3-3 3 3-3 3M4 20l8-8M13 11l-9 9"/></svg></div>
+        <h3>Réparation</h3>
+        <p>Réparation de montres, pendules et bijoux, changement de piles et remise en état soignée.</p>
+      </article>
+      <article class="scard reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l2.5 7H22l-6 4.5L18.5 21 12 16.5 5.5 21 8 13.5 2 9h7.5z"/></svg></div>
+        <h3>Gravure & création</h3>
+        <p>Gravures personnalisées et créations uniques en or, argent, titane et acier.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>Quelques pièces</h2>
+    </div>
+    <div class="gal">
+      <figure class="gw gt reveal" style="background-image:url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=1100&auto=format&fit=crop&q=82')"></figure>
+      <figure class="reveal" style="background-image:url('https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=700&auto=format&fit=crop&q=82')"></figure>
+      <figure class="reveal" style="background-image:url('https://images.unsplash.com/photo-1613945407943-59cd755fd69e?w=700&auto=format&fit=crop&q=82')"></figure>
+      <figure class="gw reveal" style="background-image:url('https://images.unsplash.com/photo-1548171838-1fd4cb4ab854?w=1100&auto=format&fit=crop&q=82')"></figure>
+      <figure class="reveal" style="background-image:url('https://images.unsplash.com/photo-1514612497953-05d1e5e171fa?w=700&auto=format&fit=crop&q=82')"></figure>
+      <figure class="reveal" style="background-image:url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&auto=format&fit=crop&q=82')"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <div class="wrap about-grid">
+    <div class="about-img reveal"></div>
+    <div class="about reveal">
+      <span class="eyebrow">La maison</span>
+      <h2>Une histoire de famille à Martigny</h2>
+      <p>Présente depuis 1978 sur la Place Centrale de Martigny, la maison Fournier perpétue un savoir-faire transmis de génération en génération, au service des amoureux des belles montres et des beaux bijoux.</p>
+      <p>Un accueil chaleureux, un conseil sincère et le soin de l'artisan : c'est ce qui fait, depuis toujours, la différence Fournier.</p>
+      <div class="stats">
+        <div><div class="n">1978</div><div class="l">au cœur de Martigny</div></div>
+        <div><div class="n">10+</div><div class="l">marques horlogères</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- IMAGE: watch-photo -->
-<section id="montres">
-  <div class="container">
-    <div class="montres-inner">
-      <div class="fade-in">
-        <p class="section-label">Horlogerie</p>
-        <h2 class="section-title">La montre, <em>compagnon</em><br>de toute une vie</h2>
-        <div class="divider"></div>
-        <p>Depuis 1978, l'horlogerie est le cœur de notre métier. Nous distribuons les plus grandes marques suisses — Tissot, Mido, Swatch — et proposons aussi des montres pour tous les styles de vie.</p>
-        <p>Notre horloger assure également les révisions, réparations et réglages de montres de toutes marques. Une montre qui s'est arrêtée, un bracelet à raccourcir, un verre à remplacer — nous nous en chargeons.</p>
-        <p>Flik Flak pour les enfants, Casio pour les sportifs, Calvin Klein pour les fashionistas — il y en a pour tous les goûts.</p>
-      </div>
-      <div class="montres-img fade-in"></div>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Nous rendre visite</h2>
     </div>
-  </div>
-</section>
-
-<section id="horaires">
-  <div class="container">
-    <p class="section-label fade-in" style="color:var(--color-primary);">Informations pratiques</p>
-    <h2 class="section-title fade-in" style="color:#fff;">Horaires & <em style="color:var(--color-primary);">contact</em></h2>
-    <div class="divider fade-in"></div>
-    <div class="horaires-inner">
-      <div class="h-block fade-in">
+    <div class="contact-grid">
+      <div class="cinfo reveal">
+        <div class="crow"><div class="ic">📍</div><div><div class="k">Adresse</div><div>Place Centrale 4, Martigny</div></div></div>
+        <div class="crow"><div class="ic">☎</div><div><div class="k">Téléphone</div><a href="tel:+41277222293">027 722 22 93</a></div></div>
+        <div class="crow"><div class="ic">✉</div><div><div class="k">Email</div><a href="mailto:bij.fournier@mycable.ch">bij.fournier@mycable.ch</a></div></div>
+        <div class="crow"><div class="ic">◎</div><div><div class="k">Réseaux</div><div>Facebook · Instagram</div></div></div>
+      </div>
+      <div class="hours reveal">
         <h3>Horaires d'ouverture</h3>
-        <table class="h-table">
-          <tr><td>Lundi – Vendredi</td><td>8h00 – 12h00 / 13h30 – 18h30</td></tr>
-          <tr><td>Samedi</td><td>8h00 – 12h00 / 13h30 – 17h00</td></tr>
-          <tr><td>Dimanche</td><td style="color:#c1440e;">Fermé</td></tr>
-        </table>
-      </div>
-      <div class="contact-block fade-in">
-        <h3>Nous trouver</h3>
-        <p>Place centrale 4<br>1920 Martigny (VS)<br>Suisse<br><br><a href="tel:+41277222293">+41 27 722 22 93</a><br><a href="mailto:bij.fournier@mycable.ch">bij.fournier@mycable.ch</a></p>
-      </div>
-      <div class="since-block fade-in">
-        <div class="since-num">1978</div>
-        <div class="since-label">En service à Martigny</div>
-        <p style="font-size:.78rem;color:rgba(255,255,255,.45);margin-top:1rem;line-height:1.8;">Plus de 45 ans d'expertise horlogère et bijoutière au cœur de Martigny, au service des habitants du Valais.</p>
+        <div class="hrow"><span>Mardi – Vendredi</span><span>8h – 12h · 13h30 – 18h30</span></div>
+        <div class="hrow"><span>Samedi</span><span>8h – 12h · 13h30 – 17h</span></div>
+        <div class="hrow"><span>Dimanche & Lundi</span><span>Fermé</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 <strong>Horlogerie-Bijouterie Thierry Fournier</strong> — Place centrale 4, 1920 Martigny — Depuis 1978</p>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="#" class="logo" style="color:#fff">Fournier<small>Horlogerie · Bijouterie</small></a>
+      <div style="max-width:380px;font-size:.92rem">Horlogerie-Bijouterie Thierry Fournier · Martigny depuis 1978. Montres, bijoux, réparations, gravures et créations sur mesure.</div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Horlogerie-Bijouterie Fournier · Place Centrale 4, Martigny · <a href="tel:+41277222293">027 722 22 93</a></div>
+      <div>Démo de refonte réalisée par <a href="https://horizonia.ch">Horizon IA</a></div>
+    </div>
+  </div>
 </footer>
 
 <script>
-const obs=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible');});},{threshold:.1});
-document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+  const burger=document.getElementById('burger'),links=document.getElementById('navlinks');
+  burger.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  const items=[...document.querySelectorAll('.exp-item')];
+  const frames=[...document.querySelectorAll('.exp-visual .frame')];
+  items.forEach(it=>it.addEventListener('click',()=>{
+    const i=+it.dataset.i;
+    items.forEach(x=>x.classList.toggle('active',x===it));
+    frames.forEach(f=>f.classList.toggle('active',+f.dataset.i===i));
+  }));
 </script>
 </body>
 </html>
